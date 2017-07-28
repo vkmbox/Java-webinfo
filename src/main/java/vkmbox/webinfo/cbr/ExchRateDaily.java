@@ -23,6 +23,7 @@ public class ExchRateDaily {
     }
  
     EnumValutesXMLResult en = port.enumValutesXML(false);
+    ExchRateParser.parseEnumValutes(en);
     System.out.println("Count:"+en.getContent().size());
     
   /*GetCursOnDateResult curs = port.getCursOnDate(onDate);  
